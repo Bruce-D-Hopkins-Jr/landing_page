@@ -1,0 +1,253 @@
+/* Import custom font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* Change page background color */
+body {
+  background-color: silver;
+}
+
+/* Make flexbox container */
+#container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+/* Header Design */
+#header {
+  text-align: center;
+}
+
+.header-main {
+  font-family: "Press Start 2P";
+  font-size: 48pt;
+  color: greenyellow;
+}
+
+/* Navbar Design */
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: greenyellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 16pt;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+  color: greenyellow;
+}
+
+.active {
+  background-color: black;
+  color: greenyellow;
+}
+
+.active-section {
+  background-color: black;
+}
+
+.active-section figcaption {
+  color: white;
+}
+
+.active-section p {
+  color: white;
+}
+/* About Me Design */
+#about-me-section {
+  text-align: center;
+  border: 4px dashed black;
+  margin-bottom: 10px;
+}
+
+#about-me-section.active-section {
+  border: 4px dashed greenyellow;
+}
+
+#about-header {
+  font-family: "Press Start 2P";
+  font-size: 24pt;
+  color: greenyellow;
+}
+
+#about-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.my-photo {
+  width: 100%;
+  max-width: 850px;
+}
+
+figure {
+  font-family: monospace;
+  font-size: 14pt;
+}
+
+.facts {
+  color: greenyellow;
+}
+
+#about-bio {
+  font-family: monospace;
+  font-size: 14pt;
+}
+
+#about-bio h3 {
+  color: greenyellow;
+}
+
+#about-bio p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Games Design */
+#games {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mole-section {
+  border: 4px dashed black;
+  margin-bottom: 10px;
+}
+
+#mole-section.active-section {
+  border: 4px dashed greenyellow;
+}
+
+#memory-section {
+  border: 4px dashed black;
+  margin-bottom: 10px;
+}
+
+#memory-section.active-section {
+  border: 4px dashed greenyellow;
+}
+
+#farm-section {
+  border: 4px dashed black;
+  margin-bottom: 10px;
+}
+
+#farm-section.active-section {
+  border: 4px dashed greenyellow;
+}
+
+.game-title {
+  font-family: "Press Start 2P";
+  font-size: 24pt;
+  color: greenyellow;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.game-info {
+  font-family: monospace;
+  font-size: 14pt;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.game-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mole-photo {
+  width: 100%;
+  max-width: 850px;
+}
+
+.memory-photo {
+  width: 100%;
+  max-width: 850px;
+}
+
+.farm-photo {
+  width: 100%;
+  max-width: 850px;
+}
+
+/* Footer Design */
+#footer {
+  text-align: center;
+}
+
+.footer-main {
+  font-family: "Press Start 2P";
+  font-size: 48pt;
+  color: greenyellow;
+}
+
+#link-bar {
+  display: block;
+  width: 100;
+}
+
+button {
+  color: black;
+  background-color: greenyellow;
+  font-family: fantasy;
+  font-size: 16pt;
+  width: 15%;
+  height: 40px;
+}
+
+button a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  color: greenyellow;
+  background-color: black;
+}
+
+/* CSS changes for smaller screens */
+@media screen and (max-width: 650px) {
+  li a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 12pt;
+  }
+
+  button {
+    color: black;
+    background-color: greenyellow;
+    font-family: fantasy;
+    font-size: 16pt;
+    width: auto;
+    height: auto;
+  }
+}
